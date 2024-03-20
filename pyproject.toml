@@ -1,0 +1,28 @@
+[build-system]
+  requires = ["setuptools>=61.0"]
+  build-backend = "setuptools.build_meta"
+
+[project]
+  name = "skypy.utils"
+  version = "0.0.1"
+
+  dynamic = ["dependencies"]
+
+  authors = [
+    { name="SkyTheCodeMaster", email="sky@skystuff.cc" },
+  ]
+  description = "A group of utility libraries"
+  readme = "README.md"
+  requires-python = ">=3.8"
+  classifiers = [
+      "Programming Language :: Python :: 3",
+      "License :: OSI Approved :: MIT License",
+      "Operating System :: OS Independent",
+  ]
+
+  [project.urls]
+  Homepage = "https://github.com/skythecodemaster/python-utils/"
+  Issues = "https://github.com/skythecodemaster/python-utils/issues"
+
+[tool.setuptools.dynamic]
+  dependencies = {file = ["requirements.txt"]}
